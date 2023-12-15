@@ -85,12 +85,12 @@ main {
 }
 
 #pizza3{
-    background-image: url(img/pizzaterceira.svg);
+    background-image: url(pizzaterceira.svg);
     background-repeat: no-repeat;
     background-size: cover;
 }
 #pizza4{
-    background-image: url(img/brotinho.svg);
+    background-image: url(brotinho.svg);
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -208,3 +208,14 @@ footer {
     cursor: pointer;
     transition: transform 0.2s ease-in-out;
 }
+footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.5); /* Cor branca com 50% de transparência */
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 10px;
+}
+
