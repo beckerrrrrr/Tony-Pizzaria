@@ -1,0 +1,210 @@
+body, h1, h2, p, input, a {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(180deg, rgba(252,121,0,0.59027777777778) 30%, rgba(252,121,0,0) 100%); 
+}
+
+header {
+    padding: 10px;
+    text-align: center;
+}
+
+header img {
+    max-width: 100%;
+    height: auto;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+.categorias {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: space-around; 
+}
+
+.foods {
+    width: 100%; 
+    padding: 0; 
+    display: flex;
+    justify-content: space-around; 
+}
+
+.categoria {
+    width: 3rem;
+    height: 3rem;
+    background-color: red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.25rem;
+    transition: 0.8s;
+    box-shadow: none; 
+}
+.container-drinks {
+    display: flex;
+    gap: 12px;
+}
+
+.bebida {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.25rem;
+    width: calc((100% - 24px) / 2);
+    padding: 10px;
+    background-color: white;
+    border: 2px solid black; 
+    box-sizing: border-box; 
+    margin-right: 12px; 
+}
+
+
+.bebida:hover {
+    background-color: #f0f0f0; 
+    color: black; 
+    border-color: white; 
+}
+#pizza1{
+    background-image: url(pizza_calabresa_e_mussarela.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#pizza2{
+    background-image: url(pizza_pepperonni_queijo_tomate.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#pizza3{
+    background-image: url(img/pizzaterceira.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#pizza4{
+    background-image: url(img/brotinho.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.pizza {
+    flex-shrink: 0;
+    width: 150px; 
+    height: 100px; 
+    border-radius: 15px; 
+    overflow: hidden; 
+    position: relative; 
+    background-color: #f27706; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.pizza a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    text-decoration: none;
+    color: #fff; 
+}
+
+.preco {
+    background-color: red; 
+    color: white; 
+    border-radius: 50%; 
+    padding: 5px; 
+    position: absolute; 
+    bottom: 10px; 
+    right: 10px; 
+    font-size: 14px; /
+}
+
+
+.acessar-container {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.acessar-container h1 {
+    color: #333;
+}
+
+.acessar-container p {
+    color: #666;
+}
+
+.registro-container {
+    width: 100%;
+    max-width: 400px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.email,
+.senha {
+    margin-bottom: 15px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 8px;
+    margin-bottom: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.botao a {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #f68b18;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+.botao a:hover {
+    background-color: #e07616;
+}
+
+.esquecer p {
+    text-align: center;
+    color: #666;
+}
+
+footer {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.conta-nova p {
+    color: #666;
+}
+
+.conta-nova a {
+    color: #f68b18;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.conta-nova a:hover {
+    text-decoration: underline;
+}
+.footer button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+}
